@@ -37,12 +37,12 @@ function digital_root(n) {
 }
 ```
 
-## Education end Courses
+## Education end Courses:
 
 * __Education: polytechnic college (secondary specialized education).__
 * __Courses:__
     + [the training itself: WebDev](https://www.youtube.com/channel/UCE9ODjNIkOHrnSdkYWLfYhg).
     + [the training itself: JavaScript book](https://learn.javascript.ru/).
 
-## English
+## English:
 A1 under study
