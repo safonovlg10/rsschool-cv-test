@@ -44,5 +44,5 @@ function digital_root(n) {
     + [the training itself: WebDev](https://www.youtube.com/channel/UCE9ODjNIkOHrnSdkYWLfYhg).
     + [the training itself: JavaScript book](https://learn.javascript.ru/).
 
-
-    
+## English
+A1 under study
