@@ -1,0 +1,14 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip288_75">
+			<rect id="mdi_mail" width="24.000000" height="24.000000" transform="translate(-0.266602 0.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="mdi_mail" width="24.000000" height="24.000000" transform="translate(-0.266602 0.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip288_75)">
+		<path id="Vector" d="M19.73 4L3.73 4C2.63 4 1.74 4.89 1.74 6L1.73 18C1.73 19.1 2.63 20 3.73 20L19.73 20C20.83 20 21.73 19.1 21.73 18L21.73 6C21.73 4.89 20.83 4 19.73 4ZM19.73 8L11.73 13L3.73 8L3.73 6L11.73 11L19.73 6L19.73 8Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
