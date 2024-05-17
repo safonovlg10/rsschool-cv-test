@@ -46,22 +46,15 @@ body {
   padding: 0;
   font-family: 'Calibri', 'Montserrat', sans-serif;
   font-size: 14px;
-    
-    
 }
 .container{
   max-width: 1440px;
   margin: 0 auto;
 }
-
-
-
-
 .header{
   /* background: #5a7c8f; */
   background: #878097;
   padding: 20px;
-  
 }
 .nav-list{
   display: flex;
@@ -74,7 +67,6 @@ body {
   position: relative;
   padding: 0 10px;
   text-decoration: none;
-  font-family: "Montserrat";
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5em;
@@ -200,7 +192,6 @@ body {
   height: 38px;
   padding: 0 17px 0 69px;
   margin-bottom: 5px;
-  
 }
 .section-contacts-item:last-child{
   margin-bottom: 0;
@@ -276,7 +267,6 @@ body {
 .section-languages-list{
   display: flex;
   align-items: baseline;
-
 }
 .languages-text{
   width: 75px;
@@ -303,6 +293,36 @@ body {
   background: rgba(84, 84, 84, 0.6);
 }
 
+/* section-hobbies style*/
+.section-hobbies-title{
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.35);
+}
+.hobbies-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 13px 9px 0 9px;
+}
+.miniature-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hobbies-img{
+  height: 30px;
+}
+.section-hobbies-text{
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 18px;
+  color: rgb(229, 229, 229);
+}
+
+
 /*right-container style  */
 
 .right-container{
@@ -311,7 +331,6 @@ body {
   border-radius: 10px;
   background: rgb(255, 255, 255);
 }
-
 .section-right-title::after{
   content: "";
   position: absolute;
@@ -337,16 +356,157 @@ body {
   line-height: 18px;
   color: rgb(255, 255, 255);
 }
-.section-subtitle-conteiner{
+.section-subtitle-container{
   padding: 12px 33px 12px 0;
 }
 
-.section-summary-subtitle{
+.section-summary-text{
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
   color: rgba(0, 0, 0, 0.8);
   
+}
+.section-right-subtitle{
+  font-family: "Calibri";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  color: rgb(52, 52, 52);
+}
+.section-right-desc{
+  font-family: "Calibri";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(52, 52, 52);
+}
+.section-right-desc__date{
+  font-family: "Calibri";
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(115, 128, 141);
+}
+
+
+
+/* section-skills style*/
+.skills-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 45px;
+  grid-row-gap: 20px;
+  padding-left: 6px;
+  
+}
+.skills-container-icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.progress-circle {
+  --color: rgb(59, 89, 153);
+  --color-2: rgb(240, 240, 240);
+  --circle-size: 56px;
+  --border-width: 10px;
+
+  position: relative;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  margin-bottom: 5px;
+  border-radius: 50%;
+  background-image: conic-gradient(var(--color) var(--progress), #FFF 0);
+}
+.progress-circle::before {
+  --inner-circle-size: calc(var(--circle-size) - var(--border-width));
+  --inner-circle-gap: calc(var(--border-width) / 2);
+
+  content: '';
+  display: block;
+  width: var(--inner-circle-size);
+  height: var(--inner-circle-size);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: relative;
+  left: var(--inner-circle-gap);
+  top: var(--inner-circle-gap);
+}
+.progress-circle::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(229 226 226);
+  border: solid 2px #fff;
+}
+.progress-circle::after{
+  content: "";
+  position: absolute;
+}
+.skills-container-my__skills-icon:nth-child(1) > .progress-circle::after{
+  width: 25px;
+  height: 30px;
+  bottom: 11px;
+  left: 16px;
+  background: url(../assets/svg/icon_HTML5.svg) no-repeat;
+}
+.skills-container-my__skills-icon:nth-child(2) > .progress-circle::after{
+  width: 25px;
+  height: 30px;
+  bottom: 11px;
+  left: 17px;
+  background: url(../assets/svg/icon_css3.svg) no-repeat;
+}
+.skills-container-my__skills-icon:nth-child(3) > .progress-circle::after{
+  width: 25px;
+  height: 30px;
+  bottom: 11px;
+  left: 16px;
+  background: url(../assets/svg/icon_javascript.svg) no-repeat;
+}
+
+.skills-container-other__skills-icon:nth-child(1) > .progress-circle::after{
+  width: 20px;
+  height: 30px;
+  bottom: 13px;
+  left: 19px;
+  background: url(../assets/svg/figma-logo-vector\ .svg) no-repeat;
+}
+.skills-container-other__skills-icon:nth-child(2) > .progress-circle::after{
+  width: 25px;
+  height: 25px;
+  bottom: 16px;
+  left: 16px;
+  background: url(../assets/svg/icon-photoshop.svg) no-repeat;
+}
+.skills-container-other__skills-icon:nth-child(3) > .progress-circle::after{
+  width: 25px;
+  height: 25px;
+  bottom: 16px;
+  left: 16px;
+  background: url(../assets/svg/icon-illustrator.svg) no-repeat;
+}
+.skills-container-other__skills-icon:nth-child(4) > .progress-circle::after{
+  width: 25px;
+  height: 25px;
+  bottom: 16px;
+  left: 16px;
+  background: url(../assets/svg/icon-experience.svg) no-repeat;
+}
+.skills-container-other__skills-icon:nth-child(5) > .progress-circle::after{
+  width: 25px;
+  height: 25px;
+  bottom: 16px;
+  left: 16px;
+  background: url(../assets/svg/icon-indesign.svg) no-repeat;
+}
+.skills-container-title{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  color: rgb(84, 84, 84);
 }
 
 
