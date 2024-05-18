@@ -32,11 +32,12 @@
                 <section class="section-profile">
                     <img src="./assets/img/YfVgvu8Woy0.jpg" alt="profile-logo" class="section-profile-logo">
                     <div class="section-profile-title-container">
-                        <h1 class="section-profile-title-name"><space class="name-first">Vitalik</space></br> Safonov</h1>
+                        <h2 class="name-first">Vitalik</h2>
+                        <h1 class="section-profile-title-name">Safonov</h1>
                         <h3 class="section-subtitle">JUNIOR FRONT-END DEVELOPER</h3>
                     </div>
                 </section>
-                <section class="section-contacts" id="contacts">
+                <div class="section-contacts" id="contacts">
                     <ul class="section-contacts-list">
                         <li class="section-contacts-item"><a href="" class="section-contacts-link">+7 928 768 42 29</a></li>
                         <li class="section-contacts-item"><a href="milto:safonovlg10@gmail.com" class="section-contacts-link">safonovlg10@gmail.com</a></li>
@@ -44,7 +45,7 @@
                         <li class="section-contacts-item"><a href="https://discord.gg/@safonovlg10" class="section-contacts-link">@safonovlg10</a></li>
                         <li class="section-contacts-item"><a href="" class="section-contacts-link">Russia, Rostov</a></li>
                     </ul>
-                </section>
+                </div>
                 <section class="section-left-conteiner section-courses" id="courses">
                     <h2 class="section-left-title section-courses-title">Courses</h2>
                     <ul class="section-courses-list">
@@ -55,7 +56,7 @@
                     </ul>
                 </section>
                 <section class="section-left-conteiner section-languages" id="languages">
-                    <h2 class="section-left-title section-languages-title">Languages</h3>
+                    <h2 class="section-left-title section-languages-title">Languages</h2>
                     <ul class="section-languages-conteiner">
                         <li class="section-languages-list">
                             <p class="section-left-subtitle languages-text">English</p>
@@ -141,7 +142,7 @@
 function digital_root(n) {
      var digits = n.toString().split("").map(Number);
      var sum = 0;
-     for (var i = 0; i < digits.length; i++) {
+     for (var i = 0; i > digits.length; i++) {
        sum += digits[i];
      }
      var sumString = sum.toString();
@@ -204,7 +205,14 @@ function digital_root(n) {
     </main>
     <footer class="footer">
         <div class="container footer-container">
-            
+            <a href="https://github.com/safonovlg10/" class="footer-github-link">
+                <img src="./assets/svg/github.svg" alt="github-icon" class="footer-github-icon">
+                My GitHub
+            </a>
+            <p class="footer-copy">&copy; Safonov Vitalik 2024</p>
+            <a href="https://app.rs.school/course/score?course=js-fe-preschool-2024q2" class="footer-github-link">
+                <img src="./assets/svg/rss.svg" alt="rss-icon" class="footer-rss-icon">
+            </a>
         </div>
     </footer>
     <script src="scripts/highlight.js"></script>
